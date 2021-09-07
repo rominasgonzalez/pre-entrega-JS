@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>BURGERQUEEN</title>
+</head>
+<body>
+<!-- NAV -->
+<div class="container-fluid sticky-top">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><h1>BURGERQUEEN</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hamburguesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trabaja en BurgerQueen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cart-nav">
+            <button class="cart-nav-button" id="cart-nav-btn" >
+              <div id="cart-total-price" class="cart-total-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- CART -->
+    <div class="row cart-container" id="cart-nav">
+      <div class="col-4 cart-display p-2" id="cart-display">
+        <div class="cart-close-btn">
+          <img src="" alt="" srcset="">
+        </div>
+        <div class="cart-text">
+          <h2 class="title-section">Carrito</h2>
+        </div>
+        <div id="cart-count-table" class="cart-item-table">
+        </div>
+      </div>
+    </div>
+  <!-- CART END -->
+  </div>
+  <!-- NAV END -->
+  
+  <!-- BANNER -->
+  
+  <!-- BANNER END -->
+
+  
+
+  <!-- PRODUCT CONTENT -->
+  <div class="container reset-margenes products-container">
+    <h2 class="title-section">Hamburguesas</h2>
+    <div class="row" id="products-list">
+        <div class="col mb-3 product filter presales">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/clasica-3.jpg" alt="Card image cap" >
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Clasica</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Reservar!</a> 
+                <button type = "button" class = "add-to-cart-btn">
+                  <i class = "fas fa-shopping-cart"></i>Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter presales">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/jamon-queso-y-tomate-1.jpg" alt="Card image cap" >
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">jamon, queso y tomate</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Reservar!</a> 
+                <button type = "button" class = "add-to-cart-btn">
+                  <i class = "fas fa-shopping-cart"></i>Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter presales">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/criolla-especial.jpg" alt="Card image cap" >
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">criolla especial</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Reservar!</a> 
+                <button type = "button" class = "add-to-cart-btn">
+                  <i class = "fas fa-shopping-cart"></i>Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter presales">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/choriburguesa-2.jpg" alt="Card image cap" >
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">choriburguesa</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Reservar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter presales">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/cordero.jpg" alt="Card image cap" >
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Cordero</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Reservar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter presales">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/cerdo.jpg" alt="Card image cap" >
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Cerdo</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Reservar!</a>
+              </div>
+            </div>
+          </div>
+          <!---- PRODUCTS BESTSALLERS ---->
+          <div class="col mb-3 product filter bestsellers">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/pollo.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Pollo</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Comprar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter bestsellers">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/doble-cheddar-doble-panceta.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Doble cheddar y panceta</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Comprar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter bestsellers">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/completa.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Completa</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Comprar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter bestsellers">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/la-demente.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">La demente</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Comprar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter bestsellers">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/lentejas-y-vegetales.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Lenteja y vegetales</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Comprar!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 product filter bestsellers">
+            <div class="card">
+              <div class="img-card">
+                <img class="card-img-top" src="imagenes/imagenes/quinoa-y-semillas.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Quinoa y semillas</h6>
+                <p class="card-text">Precio: $400</p>
+                <a href="#" class="btn btn-danger">Comprar!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <div class="select">
+    
+    </div>
+    <!-- PRODUCT CARDS -->
+  <!-- PRODUCT END -->
+
+<!-- FOOTER -->
+  
+<!-- FOOTER END -->
+
+  <!-- jQuery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- main js -->
+  <script src="main.js"></script>
+    <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
